@@ -4,14 +4,14 @@
 ## Install
 
 ```
-$ npm install --save css-colors
+$ npm install --save csscolors
 ```
 
 
 ## Usage
 
 ```js
-var csscolors = require('css-colors');
+var csscolors = require('csscolors');
 
 csscolors('css/foo.css', function(err, colors){
 	//extract colors from file
