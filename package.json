@@ -5,9 +5,9 @@
   "license": "MIT",
   "repository": "fengzilong/csscolors",
   "author": {
-    "name": "hzfengzilong",
+    "name": "fengzilong",
     "email": "feng_zilong@163.com",
-    "url": "github.com/fengzilong"
+    "url": "https://github.com/fengzilong"
   },
   "bin": "cli.js",
   "engines": {
