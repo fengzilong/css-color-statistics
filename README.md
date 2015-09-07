@@ -1,4 +1,4 @@
-# csscolors [![Build Status](https://travis-ci.org/fengzilong/csscolors.svg?branch=master)](https://travis-ci.org/fengzilong/csscolors)
+# csscolors
 
 
 ## Install
@@ -31,6 +31,7 @@ csscolors('css/', function(err, colors){
 
 ### csscolors(filepath, callback)
 
+#### filepath
 Type: `string`
 
 
