@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "description": "My wondrous module",
   "license": "MIT",
-  "repository": "fengzilong/csscolors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fengzilong/css-colors.git"
+  },
   "author": {
     "name": "fengzilong",
     "email": "feng_zilong@163.com",
