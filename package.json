@@ -1,0 +1,47 @@
+{
+  "name": "csscolors",
+  "version": "0.0.0",
+  "description": "My wondrous module",
+  "license": "MIT",
+  "repository": "fengzilong/csscolors",
+  "author": {
+    "name": "hzfengzilong",
+    "email": "feng_zilong@163.com",
+    "url": "github.com/fengzilong"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && mocha"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    ""
+  ],
+  "dependencies": {
+    "array-unique": "^0.2.1",
+    "css": "^2.2.1",
+    "glob": "^5.0.14",
+    "is-directory": "^0.3.0",
+    "is-file": "^1.0.0",
+    "meow": "^3.3.0",
+    "nomnom": "^1.8.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "xo": "^0.7.1"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "mocha"
+    ]
+  }
+}
