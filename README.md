@@ -21,7 +21,7 @@ csscolors('css/foo.css', function(err, colors){
 ```js
 var csscolors = require('csscolors');
 
-csscolors('css/', function(err, colors){
+csscolors('css/**/*.*', function(err, colors){
 	//extract colors from directory
 });
 ```
@@ -29,16 +29,11 @@ csscolors('css/', function(err, colors){
 
 ## API
 
-### csscolors(filepath, callback)
+### csscolors(cssContent, callback)
 
-#### filepath
-Type: `string`
-
-
-#### callback
-
-Type: `function`  
-
+* `cssContent` {String}
+* `callback` {Function}
+  * `colors` {Array<Object>} contains color and its line number
 
 
 ## CLI
@@ -48,13 +43,16 @@ $ npm install --global csscolors
 ```
 
 ```
-$ csscolors --help
-
-  Usage: node cli.js [options]
-
-  Options:
-    -f, --file   select a css file to parse
+$ csscolors ./
+$ csscolors path/to/css/file.css
 ```
+
+
+##CLI Example
+```
+$ csscolors ./
+```
+![](snapshot.png)
 
 
 ## License
