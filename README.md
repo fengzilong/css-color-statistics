@@ -13,7 +13,7 @@ $ npm install --save csscolors
 ```js
 var csscolors = require('csscolors');
 
-csscolors('body {background-color: #F2F2F2;}', function(err, colors){
+csscolors('body {background-color: #F2F2F2;}', function(colors){
 	/*colors will be an array like
 		[
 			{
