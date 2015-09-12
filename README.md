@@ -13,16 +13,15 @@ $ npm install --save csscolors
 ```js
 var csscolors = require('csscolors');
 
-csscolors('css/foo.css', function(err, colors){
-	//extract colors from file
-});
-```
-
-```js
-var csscolors = require('csscolors');
-
-csscolors('css/**/*.*', function(err, colors){
-	//extract colors from directory
+csscolors('body {background-color: #F2F2F2;}', function(err, colors){
+	/*colors will be an array like
+		[
+			{
+				color: '#F2F2F2',
+				line: '1'
+			}
+		]
+	*/
 });
 ```
 
@@ -36,7 +35,7 @@ csscolors('css/**/*.*', function(err, colors){
   * `colors` {Array<Object>} contains color and its line number
 
 
-## CLI
+### CLI
 
 ```
 $ npm install --global csscolors
@@ -48,7 +47,7 @@ $ csscolors path/to/css/file.css
 ```
 
 
-##CLI Example
+### CLI Example
 ```
 $ csscolors ./
 ```
