@@ -32,7 +32,7 @@ csscolors('body {background-color: #F2F2F2;}', function(err, colors){
 
 * `cssContent` {String}
 * `callback` {Function}
-  * `colors` {Array<Object>} contains color and its line number
+  * `colors` {Array} contains color and its line number
 
 
 ### CLI
