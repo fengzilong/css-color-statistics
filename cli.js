@@ -9,19 +9,13 @@ var path      = require('path');
 var fs        = require('fs');
 var chalk     = require('chalk');
 
-var opts = nomnom.option('file', {
-		abbr: 'f',
-		help: 'select a css file to parse'
-	})
-	.parse();
+//var opts = nomnom.option('file', {
+//		abbr: 'f',
+//		help: 'select a css file to parse'
+//	})
+//	.parse();
 
-var csspath = '';
-
-if( opts.file ){
-	csspath = opts.file;
-} else if( typeof opts['_'] !== 'undefined' ){
-	csspath = opts['_'][0];
-}
+var csspath = process.argv[2];
 
 if( typeof csspath === 'undefined' ){
 	return;
@@ -52,15 +46,14 @@ function extractCssFromPath(csspath, cb){
 		var colors = {};
 		
 		paths.forEach(function(v){
-			if( isdir.sync( v ) ){
+			if( isdir.sync( v ) || path.extname( v ) !== '.css' ){
 				return true;
 			}
 
 			var relativepath = path.relative(cwd, v);
-
 			var cssContent = fs.readFileSync(v, 'utf8');
-
 			var extracted = csscolors(cssContent);
+			
 			_.each(extracted, function( v, k ){
 				var tmp = {};
 				tmp[relativepath] = v;

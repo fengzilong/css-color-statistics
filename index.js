@@ -3,8 +3,15 @@ var css = require('css');
 var _   = require('lodash');
 
 function extractCssColors(cssContent){
-	var colors = [];
-	var ast = css.parse(cssContent);
+	var colors = [],
+		ast;
+
+	try {
+		ast = css.parse(cssContent);
+	} catch(e) {
+		return [];
+	}
+	
 	ast.stylesheet.rules.forEach(function(rule){
 		rule.declarations && rule.declarations.forEach(function(d){
 			if( /#[\d|a-zA-Z]{3,6}/.test(d.value) ){
