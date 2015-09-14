@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 'use strict';
-var nomnom    = require('nomnom');
 var csscolors = require('./');
 var _         = require('lodash');
 var isdir     = require('is-directory');
@@ -8,12 +7,6 @@ var glob      = require('glob');
 var path      = require('path');
 var fs        = require('fs');
 var chalk     = require('chalk');
-
-//var opts = nomnom.option('file', {
-//		abbr: 'f',
-//		help: 'select a css file to parse'
-//	})
-//	.parse();
 
 var csspath = process.argv[2];
 
