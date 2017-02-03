@@ -1,7 +1,7 @@
 {
   "name": "csscolors",
   "version": "0.1.0",
-  "description": "My wondrous module",
+  "description": "colors in css",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -9,13 +9,10 @@
   },
   "author": {
     "name": "fengzilong",
-    "email": "feng_zilong@163.com",
+    "email": "fengzilong1992@gmail.com",
     "url": "https://github.com/fengzilong"
   },
   "bin": "cli.js",
-  "engines": {
-    "node": ">=0.10.0"
-  },
   "scripts": {
     "test": "xo && mocha"
   },
@@ -36,15 +33,5 @@
     "lodash": "^3.10.1",
     "meow": "^3.3.0",
     "nomnom": "^1.8.1"
-  },
-  "devDependencies": {
-    "mocha": "^2.2.5",
-    "xo": "^0.7.1"
-  },
-  "xo": {
-    "envs": [
-      "node",
-      "mocha"
-    ]
   }
 }
