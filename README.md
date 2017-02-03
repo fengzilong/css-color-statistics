@@ -1,5 +1,6 @@
-# css-colors
+# csscolors
 
+> color statistical analysis within a file or a directory
 
 ## Install
 
