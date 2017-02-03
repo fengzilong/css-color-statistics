@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/fengzilong/css-colors.git"
   },
+  "eslintConfig": {
+    "extends": "mo/node"
+  },
   "author": {
     "name": "fengzilong",
     "email": "fengzilong1992@gmail.com",
@@ -31,5 +34,9 @@
     "lodash": "^3.10.1",
     "meow": "^3.3.0",
     "nomnom": "^1.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-mo": "^0.1.0"
   }
 }

@@ -4,10 +4,9 @@
 
 ## Install
 
-```
+```bash
 $ npm install --save csscolors
 ```
-
 
 ## Usage
 
@@ -26,7 +25,6 @@ csscolors('body {background-color: #F2F2F2;}', function(colors){
 });
 ```
 
-
 ## API
 
 ### csscolors(cssContent, callback)
@@ -35,25 +33,24 @@ csscolors('body {background-color: #F2F2F2;}', function(colors){
 * `callback` {Function}
   * `colors` {Array} contains color and its line number
 
-
 ### CLI
 
-```
+```bash
 $ npm install --global csscolors
 ```
 
-```
+```bash
 $ csscolors ./
 $ csscolors path/to/css/file.css
 ```
 
-
 ### CLI Example
-```
+
+```bash
 $ csscolors ./
 ```
-![](snapshot.png)
 
+![](snapshot.png)
 
 ## License
 
